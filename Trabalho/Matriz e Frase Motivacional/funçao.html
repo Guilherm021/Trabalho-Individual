@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+</head>
+<body>
+    <script>
+        function substituirLinhaPorZeros(matriz, numero) {
+            if (numero >= 0 && numero < matriz.length) {
+                matriz[numero] = Array(matriz[numero].length).fill(0);
+            }
+            return matriz;
+        }
+
+        const matriz = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        const numero = 1; // Número da linha a ser substituída
+        const resultado = substituirLinhaPorZeros(matriz, numero);
+
+        console.log(resultado); // Exibe o resultado no console
+    </script>
+</body>
+</html>

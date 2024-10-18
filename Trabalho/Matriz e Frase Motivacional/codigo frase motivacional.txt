@@ -1,0 +1,15 @@
+function fraseMotivacionalAleatoria() {
+    const frases = [
+        "Acredite em você e tudo será possível.",
+        "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+        "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+        "Não importa quantas vezes você falhe, o que importa é quantas vezes você se levanta.",
+        "A vida é 10% do que acontece e 90% de como reagimos a isso."
+    ];
+
+    const indiceAleatorio = Math.floor(Math.random() * frases.length);
+    return frases[indiceAleatorio];
+}
+
+// Exemplo de uso
+console.log(fraseMotivacionalAleatoria());

@@ -1,0 +1,18 @@
+function substituirLinhaPorZeros(minhaMatriz, linhaParaSubstituir) {
+    if (linhaParaSubstituir >= 0 && linhaParaSubstituir < minhaMatriz.length) {
+        minhaMatriz[linhaParaSubstituir] = Array(minhaMatriz[linhaParaSubstituir].length).fill(0);
+    }
+    return minhaMatriz;
+}
+
+const novaMatriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+const linhaParaSubstituir = 1; // Número da linha a ser substituída
+const resultadoFinal = substituirLinhaPorZeros(novaMatriz, linhaParaSubstituir);
+
+console.log(resultadoFinal);
+

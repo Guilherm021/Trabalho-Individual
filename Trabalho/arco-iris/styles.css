@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #272727dd; /* Fundo preto */
+    font-family: Arial, sans-serif;
+}
+
+.rainbow-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-clip: text;
+    color: transparent;
+    transition: color 0.3s;
+}
+
+.rainbow-text:hover {
+    animation: changeColor 2s infinite;
+}
+
+@keyframes changeColor {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #ddd; /* Cor de texto da descrição */
+    margin-top: 20px;
+    text-align: center;
+    max-width: 600px;
+}
